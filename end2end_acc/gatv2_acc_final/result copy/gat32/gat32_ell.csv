@@ -1,0 +1,3 @@
+data,layers,hidden,heads,time
+ell,3,64,1,3.5835
+ell,3,64,2,7.1396

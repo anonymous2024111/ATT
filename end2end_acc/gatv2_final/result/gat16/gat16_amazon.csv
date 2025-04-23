@@ -1,0 +1,13 @@
+data,layers,hidden,heads,time
+amazon,3,64,1,8.0997
+amazon,3,64,2,11.0974
+amazon,3,128,1,10.4604
+amazon,3,128,2,15.9435
+amazon,6,64,1,13.2008
+amazon,6,64,2,19.7506
+amazon,6,128,1,19.1206
+amazon,6,128,2,32.0867
+amazon,3,256,1,15.4372
+amazon,3,256,2,26.3747
+amazon,6,256,1,31.5744
+amazon,6,256,2,58.9242

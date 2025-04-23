@@ -1,0 +1,42 @@
+3-64-1-soc-Epinions1-mgat-fp16-3.095
+3-64-1-GitHub-mgat-fp16-2.7
+3-64-1-artist-mgat-fp16-3.1128
+3-64-1-blog-mgat-fp16-3.2276
+3-64-1-amazon-mgat-fp16-10.9535
+3-64-1-amazon0505-mgat-fp16-9.8137
+3-64-1-dd-mgat-fp16-6.8841
+3-64-1-comamazon-mgat-fp16-7.5746
+3-64-1-yeast-mgat-fp16-39.6368
+3-64-1-reddit-mgat-fp16-36.2606
+3-64-1-AmazonProducts-mgat-fp16-139.6746
+3-64-1-IGB_small-mgat-fp16-26.8659
+3-64-1-IGB_medium-mgat-fp16-276.5701
+3-64-1-ogbn-arxiv-mgat-fp16-5.2467
+3-64-1-ogbn-proteins-mgat-fp16-23.497
+3-64-1-ogb-mgat-fp16-119.0218
+3-128-1-soc-Epinions1-mgat-fp16-2.9671
+3-128-1-GitHub-mgat-fp16-3.0511
+3-128-1-artist-mgat-fp16-3.0576
+3-128-1-blog-mgat-fp16-4.62
+3-128-1-amazon-mgat-fp16-15.3596
+3-128-1-amazon0505-mgat-fp16-13.8412
+3-128-1-dd-mgat-fp16-9.6842
+3-128-1-comamazon-mgat-fp16-10.5928
+3-128-1-yeast-mgat-fp16-53.5059
+3-128-1-reddit-mgat-fp16-50.3536
+3-128-1-AmazonProducts-mgat-fp16-204.0468
+3-128-1-IGB_small-mgat-fp16-36.5675
+Traceback (most recent call last):
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gatv2_final/eva_gat_100.py", line 107, in <module>
+    mGCN16(data, filename, epoches, head_num, layer_num, featuredim, hidden_num, classes)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gatv2_final/eva_gat_100.py", line 38, in mGCN16
+    spmm = test_mgat_csr.test(data, epoches, head,num_layers, featuredim, hidden, classes)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gatv2_final/mgat_csr/test_mgat_csr.py", line 18, in test
+    train(model, inputInfo, 1)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gatv2_final/mgat_csr/gat_mgnn.py", line 68, in train
+    loss.backward()
+  File "/home/shijinliang/.conda/envs/sjlpy39pro/lib/python3.9/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/shijinliang/.conda/envs/sjlpy39pro/lib/python3.9/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.77 GiB. GPU 0 has a total capacty of 79.14 GiB of which 950.81 MiB is free. Including non-PyTorch memory, this process has 78.21 GiB memory in use. Of the allocated memory 73.78 GiB is allocated by PyTorch, and 2.08 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

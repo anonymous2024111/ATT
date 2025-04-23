@@ -1,0 +1,13 @@
+data,layers,hidden,heads,time
+comamazon,3,64,1,8.4568
+comamazon,3,64,2,10.9445
+comamazon,3,64,4,13.5184
+comamazon,3,128,1,10.8535
+comamazon,3,128,2,14.5903
+comamazon,3,128,4,21.0112
+comamazon,6,64,1,13.3968
+comamazon,6,64,2,16.332
+comamazon,6,64,4,18.8738
+comamazon,6,128,1,19.8686
+comamazon,6,128,2,23.6148
+comamazon,6,128,4,30.1013

@@ -1,0 +1,13 @@
+setup.py
+mGAT.egg-info/PKG-INFO
+mGAT.egg-info/SOURCES.txt
+mGAT.egg-info/dependency_links.txt
+mGAT.egg-info/top_level.txt
+test/test_bmm.py
+test/test_gat.py
+test/test_sddmm_fp16.py
+test/test_sddmm_fp16_att.py
+test/test_sddmm_fp16_trans.py
+test/test_sddmm_tf32.py
+test/test_sddmm_tf32_att.py
+test/test_trans.py

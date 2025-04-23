@@ -1,0 +1,17 @@
+3-64-soc-Epinions1-mgat-tf32-5.3973
+MGCN-fp16-success
+
+3-64-reddit-mgat-tf32-4785.688
+3-64-AmazonProducts-mgat-tf32-1485.3642
+3-64-IGB_medium-mgat-tf32-249.7253
+3-64-ogbn-arxiv-mgat-tf32-2.5148
+3-64-ogbn-proteins-mgat-tf32-299.355
+3-64-ogb-mgat-tf32-123.6047
+3-128-reddit-mgat-tf32-4813.4147
+3-128-AmazonProducts-mgat-tf32-1543.7821
+3-128-IGB_medium-mgat-tf32-295.8945
+3-128-ogbn-arxiv-mgat-tf32-3.0696
+3-128-ogbn-proteins-mgat-tf32-312.7863
+3-128-ogb-mgat-tf32-156.1902
+MGCN-tf32-success
+

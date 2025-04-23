@@ -1,0 +1,18 @@
+H100 : 
+soc-Epinions1,1-64,1.2424
+GitHub,1-64,0.8159
+blog,1-64,3.0921
+ogbn-arxiv,1-64,2.7167
+artist,1-64,1.3864
+amazon,1-64,8.4476
+soc-Epinions1,4-64,2.481
+GitHub,4-64,1.6118
+blog,4-64,8.1266
+ogbn-arxiv,4-64,4.6193
+artist,4-64,3.4405
+amazon,4-64,24.1617
+soc-Epinions1,8-64,4.1077
+GitHub,8-64,2.7091
+blog,8-64,18.1641
+ogbn-arxiv,8-64,7.2434
+artist,8-64,6.2342

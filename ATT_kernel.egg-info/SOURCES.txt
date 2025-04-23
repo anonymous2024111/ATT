@@ -1,0 +1,10 @@
+setup.py
+./Block/example.cpp
+./benchmark/GAT-benchmark/src/benchmark.cpp
+./benchmark/GATv2-benchmark/src/benchmark.cpp
+./benchmark/GCN-benchmark/src/benchmark.cpp
+./benchmark/GCNv2-benchmark/src/benchmark.cpp
+ATT_kernel.egg-info/PKG-INFO
+ATT_kernel.egg-info/SOURCES.txt
+ATT_kernel.egg-info/dependency_links.txt
+ATT_kernel.egg-info/top_level.txt

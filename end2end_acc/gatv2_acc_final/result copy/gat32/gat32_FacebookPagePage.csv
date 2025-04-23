@@ -1,0 +1,13 @@
+data,layers,hidden,heads,time
+FacebookPagePage,3,64,1,2.4524
+FacebookPagePage,3,64,2,2.571
+FacebookPagePage,3,64,4,2.3906
+FacebookPagePage,3,128,1,2.3563
+FacebookPagePage,3,128,2,2.4569
+FacebookPagePage,3,128,4,2.6799
+FacebookPagePage,6,64,1,4.2959
+FacebookPagePage,6,64,2,4.2028
+FacebookPagePage,6,64,4,5.0696
+FacebookPagePage,6,128,1,4.4005
+FacebookPagePage,6,128,2,3.7205
+FacebookPagePage,6,128,4,3.518

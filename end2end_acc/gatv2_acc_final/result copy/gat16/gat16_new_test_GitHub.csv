@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+GitHub,3,64,1,2.2842
+GitHub,3,64,8,2.8982
+GitHub,3,128,1,2.3819
+GitHub,3,128,8,3.419

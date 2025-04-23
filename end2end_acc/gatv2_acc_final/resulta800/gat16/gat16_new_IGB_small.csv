@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+IGB_small,3,64,1,26.6126
+IGB_small,3,64,8,61.6976
+IGB_small,3,128,1,33.8418
+IGB_small,3,128,8,94.4609

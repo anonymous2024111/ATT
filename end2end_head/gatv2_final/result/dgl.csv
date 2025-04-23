@@ -1,0 +1,10 @@
+data,config,dgl
+GitHub,1-64,2.0133
+blog,1-64,5.3597
+ogbn-arxiv,1-64,3.7777
+GitHub,4-64,3.72
+blog,4-64,11.1771
+ogbn-arxiv,4-64,7.26
+GitHub,8-64,5.0456
+blog,8-64,18.2544
+ogbn-arxiv,8-64,10.2768

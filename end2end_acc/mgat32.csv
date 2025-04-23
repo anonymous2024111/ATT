@@ -1,0 +1,4 @@
+data,config,total,forward,backward,others
+ogbn-arxiv,3-64,0.0187,0.004,0.0087,0.006
+ogbn-proteins,3-64,0.0963,0.0381,0.0538,0.0044
+ogb,3-64,0.4585,0.1456,0.2411,0.0718

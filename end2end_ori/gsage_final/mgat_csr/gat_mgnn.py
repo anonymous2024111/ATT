@@ -1,0 +1,70 @@
+import os.path as osp
+import argparse
+import time
+import torch
+import numpy as np 
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.cuda as cuda
+from mgat_csr.mgat_conv import *
+from torch.optim import Adam
+
+
+#########################################
+## Build GAT Model
+#########################################
+
+class Net(torch.nn.Module):
+    def __init__(self,in_feats, hidden_feats, out_feats, num_layers, dropout):
+        super(Net, self).__init__()
+        self.conv1 = GCNConv(in_feats, hidden_feats)
+        
+        self.hidden_layers = nn.ModuleList()
+        for _ in range(num_layers -  2):
+            self.hidden_layers.append(GCNConv(hidden_feats, hidden_feats))
+        
+        self.conv2 = GCNConv(hidden_feats, out_feats)
+        self.num_layers = num_layers
+        self.dropout = dropout
+
+    def forward(self, inputInfo):
+        x = inputInfo.x
+        x = F.relu(self.conv1(x, inputInfo))
+        x = F.dropout(x, self.dropout, training=self.training)
+        for Gconv in self.hidden_layers:
+            x = Gconv(x, inputInfo)
+            x = F.relu(x)
+            x = F.dropout(x, self.dropout, training=self.training)
+        x = self.conv2(x, inputInfo).half()
+        res=F.log_softmax(x, dim=1)
+        return res
+
+
+
+def test1(model, inputInfo):
+    model.eval()
+    with torch.no_grad():
+        logits = model(inputInfo)
+        
+        logits = logits[inputInfo.test_mask]
+        labels = inputInfo.y[inputInfo.test_mask]
+
+        _, indices = torch.max(logits, dim=1)
+        correct = torch.sum(indices == labels)
+        return correct.item() * 1.0 / len(labels)
+    
+    
+# Training 
+def train(model, inputInfo, epoches):
+    # loss_fcn = nn.CrossEntropyLoss()  
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-2, weight_decay=5e-4)  
+    
+    for epoch in range(epoches):
+        model.train()
+        logits = model(inputInfo)
+        # if torch.isnan(logits).any().item() :
+        loss =  F.nll_loss(logits, inputInfo.y)
+        
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()

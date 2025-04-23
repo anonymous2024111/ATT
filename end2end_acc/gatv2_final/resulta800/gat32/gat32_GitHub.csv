@@ -1,0 +1,13 @@
+data,layers,hidden,heads,time
+GitHub,3,64,1,2.7128
+GitHub,3,64,2,3.9418
+GitHub,3,64,4,4.4684
+GitHub,3,128,1,2.5575
+GitHub,3,128,2,4.5317
+GitHub,3,128,4,5.4754
+GitHub,6,64,1,4.731
+GitHub,6,64,2,5.2953
+GitHub,6,64,4,5.8224
+GitHub,6,128,1,4.9859
+GitHub,6,128,2,6.5421
+GitHub,6,128,4,7.5028

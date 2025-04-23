@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+Reddit2,3,64,1,10.934
+Reddit2,3,64,8,34.9597
+Reddit2,3,128,1,16.0755
+Reddit2,3,128,8,58.0347

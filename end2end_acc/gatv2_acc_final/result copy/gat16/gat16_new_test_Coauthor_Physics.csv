@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+Coauthor_Physics,3,64,1,2.604
+Coauthor_Physics,3,64,8,3.108
+Coauthor_Physics,3,128,1,2.3116
+Coauthor_Physics,3,128,8,3.3105

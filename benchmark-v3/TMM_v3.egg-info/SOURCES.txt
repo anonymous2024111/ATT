@@ -1,0 +1,11 @@
+setup.py
+./sddmm-benchmark/src/benchmark.cpp
+./sddmm-benchmark/src/sddmmKernel_fp16.cu
+./sddmm-benchmark/src/sddmmKernel_tf32.cu
+./spmm-benchmark/src/benchmark.cpp
+./spmm-benchmark/src/spmmKernel_fp16.cu
+./spmm-benchmark/src/spmmKernel_tf32.cu
+TMM_v3.egg-info/PKG-INFO
+TMM_v3.egg-info/SOURCES.txt
+TMM_v3.egg-info/dependency_links.txt
+TMM_v3.egg-info/top_level.txt

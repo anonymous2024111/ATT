@@ -1,0 +1,4 @@
+data,layers,hidden,heads,time
+DGraphFin,3,64,1,77.2033
+DGraphFin,3,64,8,164.5791
+DGraphFin,3,128,1,97.0165

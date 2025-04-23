@@ -1,0 +1,42 @@
+3-64-soc-Epinions1-mgat-tf32-2.0151
+3-64-GitHub-mgat-tf32-1.9646
+3-64-artist-mgat-tf32-2.0219
+3-64-blog-mgat-tf32-3.2132
+3-64-amazon-mgat-tf32-10.3494
+3-64-amazon0505-mgat-tf32-8.7965
+3-64-dd-mgat-tf32-5.6866
+3-64-comamazon-mgat-tf32-6.7664
+3-64-yeast-mgat-tf32-34.0185
+3-64-reddit-mgat-tf32-41.3362
+3-64-AmazonProducts-mgat-tf32-165.6455
+3-64-IGB_small-mgat-tf32-27.4394
+3-64-IGB_medium-mgat-tf32-286.6401
+3-64-ogbn-arxiv-mgat-tf32-4.0286
+3-64-ogbn-proteins-mgat-tf32-27.9903
+3-64-ogb-mgat-tf32-136.774
+3-128-soc-Epinions1-mgat-tf32-2.4911
+3-128-GitHub-mgat-tf32-2.0232
+3-128-artist-mgat-tf32-2.5241
+3-128-blog-mgat-tf32-4.6018
+3-128-amazon-mgat-tf32-14.4685
+3-128-amazon0505-mgat-tf32-12.0399
+3-128-dd-mgat-tf32-7.4784
+3-128-comamazon-mgat-tf32-9.1928
+3-128-yeast-mgat-tf32-42.6938
+3-128-reddit-mgat-tf32-62.0356
+3-128-AmazonProducts-mgat-tf32-261.3887
+3-128-IGB_small-mgat-tf32-37.3896
+Traceback (most recent call last):
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gat_final/eva_gat_100.py", line 133, in <module>
+    mGCN32(data, filename, epoches, head_num, layer_num, featuredim, hidden_num, classes)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gat_final/eva_gat_100.py", line 50, in mGCN32
+    spmm= test_mgat32_csr.test(data, epoches, head, num_layers, featuredim, hidden, classes)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gat_final/mgat32_csr/test_mgat32_csr.py", line 19, in test
+    train(model, inputInfo, 10)
+  File "/home/shijinliang/module/tpds/ATT/end2end_ori/gat_final/mgat32_csr/gat_mgnn.py", line 64, in train
+    loss.backward()
+  File "/home/shijinliang/.conda/envs/sjlpy39pro/lib/python3.9/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/shijinliang/.conda/envs/sjlpy39pro/lib/python3.9/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.77 GiB. GPU 0 has a total capacty of 79.14 GiB of which 1.31 GiB is free. Including non-PyTorch memory, this process has 77.83 GiB memory in use. Of the allocated memory 65.88 GiB is allocated by PyTorch, and 9.59 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

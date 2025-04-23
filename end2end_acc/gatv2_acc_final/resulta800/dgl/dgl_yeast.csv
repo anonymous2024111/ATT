@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+yeast,3,64,1,39.8995
+yeast,3,64,8,98.7589
+yeast,3,128,1,51.6718
+yeast,3,128,8,175.4864

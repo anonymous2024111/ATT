@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+pubmed,3,64,1,2.4285
+pubmed,3,64,8,2.8761
+pubmed,3,128,1,2.4792
+pubmed,3,128,8,2.9892

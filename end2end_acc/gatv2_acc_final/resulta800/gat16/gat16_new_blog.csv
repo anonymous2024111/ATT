@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+blog,3,64,1,3.2414
+blog,3,64,8,8.7183
+blog,3,128,1,4.0386
+blog,3,128,8,12.2642

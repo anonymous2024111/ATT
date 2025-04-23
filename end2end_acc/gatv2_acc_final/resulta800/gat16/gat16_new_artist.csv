@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+artist,3,64,1,2.2452
+artist,3,64,8,4.6293
+artist,3,128,1,2.3703
+artist,3,128,8,6.411

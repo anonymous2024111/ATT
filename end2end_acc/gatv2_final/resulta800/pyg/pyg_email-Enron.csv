@@ -1,0 +1,5 @@
+data,layers,hidden,heads,time
+email-Enron,3,64,1,2.5894
+email-Enron,3,64,8,6.5481
+email-Enron,3,128,1,3.4963
+email-Enron,3,128,8,11.3005

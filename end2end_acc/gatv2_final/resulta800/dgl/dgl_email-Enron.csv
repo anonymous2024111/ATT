@@ -1,0 +1,9 @@
+data,layers,hidden,heads,time
+email-Enron,3-128,5.2556
+email-Enron,3-128,6.2212
+email-Enron,3-256,6.2047
+email-Enron,3-256,11.375
+email-Enron,6-128,9.3084
+email-Enron,6-128,13.5352
+email-Enron,6-256,13.1681
+email-Enron,6-256,30.3307
