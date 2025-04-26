@@ -1,5 +1,0 @@
-data,layers,hidden,heads,time
-ell,3,64,1,4.5013
-ell,3,64,8,8.8925
-ell,3,128,1,5.4016
-ell,3,128,8,14.345

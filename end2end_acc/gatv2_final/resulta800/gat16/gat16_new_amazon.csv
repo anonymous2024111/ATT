@@ -1,5 +1,0 @@
-data,layers,hidden,heads,time
-amazon,3,64,1,10.3139
-amazon,3,64,8,25.8824
-amazon,3,128,1,12.8034
-amazon,3,128,8,37.2817
